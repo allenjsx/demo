@@ -1,15 +1,9 @@
----
-title: Le Wagon - Middleman
----
+<div class="container text-center">
+  <h1>Today is <%= Date.today %></h1>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+  <ul>
+    <% %w(ERB, middleman, whatever).each do |tech| %>
+    <li> Today we are playing with <%= tech %></li>
+    <% end %>
+  </ul>
 </div>
